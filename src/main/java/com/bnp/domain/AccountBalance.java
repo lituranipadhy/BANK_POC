@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class AccountBalance {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ACCOUNT_ID")
 	private Integer accountId;
 

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.bnp.domain.BeneficiaryDTO;
 
-@Repository
 public interface BeneficiaryRepository extends CrudRepository<BeneficiaryDTO, Long> {
 
 	@Modifying

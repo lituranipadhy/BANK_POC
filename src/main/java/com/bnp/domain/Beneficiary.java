@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Beneficiary {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ACCOUNT_ID")
 	private Long accountId;
 

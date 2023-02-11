@@ -6,17 +6,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Transactions {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ID")
 	private Integer id;
 
 	@Column(name = "Account_Id")
 	private Long AccountId;
 
+	@DateTimeFormat(pattern = "dd-MM-yy")
 	@Column(name = "Date")
 	private String date;
 

@@ -1,13 +1,21 @@
 package com.bnp.domain;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Pattern.Flag;
+
 public class AccountsDTO {
 
 	private Long accountId;
 
 	private String accountName;
 
+	@Digits(message="Number should contain 10 digits.", fraction = 0, integer = 10)
 	private Integer phone;
 
+	@NotNull
+	@Pattern(regexp = "[^@\\s]+@[^@\\s]+\\.[^@\\s]+", flags = { Flag.CASE_INSENSITIVE }, message = "The email is invalid.")
 	private String email;
 
 	private String status;

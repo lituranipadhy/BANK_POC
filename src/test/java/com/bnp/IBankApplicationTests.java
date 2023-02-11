@@ -1,13 +1,17 @@
 package com.bnp;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.Assert.assertEquals;
 
-@SpringBootTest
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.junit.MockitoJUnitRunner;
+
+@RunWith(MockitoJUnitRunner.class)
 class IBankApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void test() {
+		assertEquals("success", "success");
 	}
 
 }

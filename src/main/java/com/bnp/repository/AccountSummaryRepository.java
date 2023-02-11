@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.bnp.domain.TransactionsDTO;
 
-@Repository
 public interface AccountSummaryRepository extends CrudRepository<TransactionsDTO, Long> {
 
 }
