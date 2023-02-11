@@ -1,7 +1,10 @@
 # BANK_POC
 use below REST api for beneficiary "POST" call
+
 localhost:8080/Beneficiary/Add
+
 localhost:8080/Beneficiary/Update
+
 localhost:8080/Beneficiary/Delete
 
 Get all the Beneficiary list. "GET" call
