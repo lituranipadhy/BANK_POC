@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -16,7 +18,8 @@ public class Transactions {
 	@Column(name = "ID")
 	private Integer id;
 
-	@Column(name = "Account_Id")
+	@OneToMany
+	@JoinColumn(name = "Account_Id", referencedColumnName = "Account_Id")
 	private Long AccountId;
 
 	@DateTimeFormat(pattern = "dd-MM-yy")
